@@ -1,14 +1,13 @@
 # raspberrypi-ap
 
-Setup WiFi-AP on headless Raspberry Pi.
+Setup WiFi-AP on **headless** Raspberry Pi.
 
 ### Step 1
 ---
 
-Enable SSH on a headless Raspberry Pi (add file to SD card on another machine)
-```
-SSH can be enabled by placing a file named ssh, without any extension, onto the boot partition of the SD card from another computer. When the Pi boots, it looks for the ssh file. If it is found, SSH is enabled and the file is deleted.
-```
+Enable **SSH** on a headless Raspberry Pi (add file to SD card on another machine)
+
+> **SSH** can be enabled by placing a file named ssh, without any extension, onto the boot partition of the SD card from another computer. When the Pi boots, it looks for the ssh file. If it is found, SSH is enabled and the file is deleted.
 
 SSH into raspberrypi
 ```
@@ -51,7 +50,7 @@ Replace configuration files
 /etc/dnsmasq.conf (DNS)
 /etc/hostapd/hostapd.conf (HOST AP)
 ```
-Tell the system where to find the hostapd.conf in the /etc/default/hostapd. Find the line with #DAEMON_CONF, and replace it with
+Tell the system where to find the hostapd.conf in the /etc/default/hostapd. Find the line with **#DAEMON_CONF**, and replace it with
 ```
 DAEMON_CONF="/etc/hostapd/hostapd.conf"
 ```
