@@ -25,7 +25,7 @@ sudo apt-get upgrade
 
 ### Step 3
 ---
-Install all the required software
+Install required softwares
 
 ```
 sudo apt-get install dnsmasq hostapd
@@ -40,10 +40,17 @@ sudo systemctl stop hostapd
 sudo reboot
 ```
 
-
 ### Step 5
 ---
-Replace configuration files
+Change the SSID and passowrd in the `hostapd.conf` with yours
+
+### Step 6
+---
+Change the `interface`, DNS IP and the range of dynamic IP with yours in the `dhcpcd.conf` and `hostapd.conf`
+
+### Step 6
+---
+Put the following configuration files
 
 ```
 /etc/dhcpcd.conf (DHCP)
@@ -55,7 +62,7 @@ Tell the system where to find the hostapd.conf in the /etc/default/hostapd. Find
 DAEMON_CONF="/etc/hostapd/hostapd.conf"
 ```
 
-### Step 6
+### Step 7
 ---
 Start the software
 ```
@@ -64,7 +71,7 @@ sudo systemctl start dnsmasq
 sudo reboot
 ```
 
-### Step 7
+### Step 8
 ---
 Check all of the softwares are active (running)
 
