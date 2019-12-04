@@ -64,7 +64,7 @@ DAEMON_CONF="/etc/hostapd/hostapd.conf"
 
 ### Step 8
 ---
-Start the software
+Start the software and reboot
 ```
 sudo systemctl start hostapd
 sudo systemctl start dnsmasq
