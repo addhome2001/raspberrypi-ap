@@ -48,7 +48,7 @@ Change the SSID and passowrd in the `hostapd.conf` with yours
 ---
 Change the `interface`, DNS IP and the range of dynamic IP with yours in the `dhcpcd.conf` and `hostapd.conf`
 
-### Step 6
+### Step 7
 ---
 Put the following configuration files
 
@@ -62,7 +62,7 @@ Tell the system where to find the hostapd.conf in the /etc/default/hostapd. Find
 DAEMON_CONF="/etc/hostapd/hostapd.conf"
 ```
 
-### Step 7
+### Step 8
 ---
 Start the software
 ```
@@ -71,7 +71,7 @@ sudo systemctl start dnsmasq
 sudo reboot
 ```
 
-### Step 8
+### Step 9
 ---
 Check all of the softwares are active (running)
 
